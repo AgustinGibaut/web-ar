@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEV-AR</></title>
+    <meta name="description" content="Servicios de desarrollo web responsivo y software personalizado para tu negocio.">
+    <meta name="keywords" content="desarrollo web, diseño web, SEO, aplicaciones web, diseño responsive">
+    <meta name="author" content="Agustín Gibaut">
     <link rel="icon" type="image/png" href="imagenes/etiqueta pagina.jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,14 +14,17 @@
 </head>
 <body>
    
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <span class="logo-text">DEV-AR<span class="code-tag">&lt;/&gt;</span></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            
+            <!-- Botón hamburguesa personalizado -->
+            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -37,6 +43,8 @@
             </div>
         </div>
     </nav>
+    
+    
 
     <!-- Hero Section -->
     <header id="inicio" class="hero-section">
@@ -172,7 +180,7 @@
                         <div class="price-badge">CATALOGOS</div>
                         <div class="price-header">
                             <h3>para tu tienda online</h3>
-                            <div class="price">$999</div>
+                            <div class="price">$50.000</div>
                         </div>
                         <div class="price-features">
                             <ul>
@@ -192,17 +200,17 @@
                 <div class="col-md-4 mb-4">
                     <div class="price-card">
                         <div class="price-header">
-                            <h3>Premium</h3>
-                            <div class="price">$1499</div>
+                            <div class="price-badge">SOFTWARE</div>
+                            <h3>para tu negocio</h3>
+                            <div class="price">Depende tu necesidad</div>
                         </div>
                         <div class="price-features">
                             <ul>
-                                <li><i class="fas fa-check"></i> Diseño Responsive</li>
-                                <li><i class="fas fa-check"></i> Páginas ilimitadas</li>
-                                <li><i class="fas fa-check"></i> Formulario de contacto</li>
-                                <li><i class="fas fa-check"></i> SEO avanzado</li>
-                                <li><i class="fas fa-check"></i> Integración con redes sociales</li>
-                                <li><i class="fas fa-check"></i> Mantenimiento mensual</li>
+                                <li><i class="fas fa-check"></i> A MEDIDA</li>
+                                <li><i class="fas fa-check"></i> PERSONALIZADO</li>
+                                <li><i class="fas fa-check"></i> ADAPTADO A TU NEGOCIO</li>
+                                <li><i class="fas fa-check"></i> BUENAS PRACTICAS</li>
+                                <li><i class="fas fa-check"></i> MANTENIMIENTO ANUAL</li>
                             </ul>
                         </div>
                         <div class="price-footer">
@@ -339,7 +347,7 @@
             
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2023 DEV-AR. Todos los derechos reservados.</p>
+                    <p class="mb-0">&copy; 2025 DEV-AR. Todos los derechos reservados.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
                     <div class="social-links">
@@ -358,5 +366,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Agregar antes del cierre del body -->
 <script src="contacto.js"></script>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.getElementById('navbar-toggler');
+
+    toggler.addEventListener('click', function () {
+        this.classList.toggle('open');
+    });
+});
+    </script>
+    
 </body>
 </html>
